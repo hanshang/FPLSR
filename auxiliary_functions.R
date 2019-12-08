@@ -1,10 +1,11 @@
 #################################### 
 ###         Functions            ###
 ####################################
-install.packages(c("fda", "plsgenomics", "plsdepot"))
+#install.packages(c("fda", "plsgenomics", "plsdepot", "expm"))
 library(fda)
 library(plsgenomics)
 library(plsdepot)
+library(expm)  
 
 ### Generate Matrix of Bsplines basis functions using the FDA package
 Bsplines_FDA = function(d_time, nbf, norder=4){
